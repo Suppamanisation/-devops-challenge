@@ -10,7 +10,7 @@ on:
     branches: [ main ]
 
 env:
-  AWS_DEFAULT_REGION: "us-east-1"
+  AWS_DEFAULT_REGION: "eu-central-1"
 
 jobs:
 
@@ -161,6 +161,6 @@ jobs:
         working-directory: ${{ env.WORK_DIR }}
         run: terraform init
 
-      - name: Terraform Destroy
-        working-directory: ${{ env.WORK_DIR }}
-        run: terraform destroy --auto-approve
+      # - name: Terraform Destroy
+      #   working-directory: ${{ env.WORK_DIR }}
+      #   run: terraform destroy --auto-approve
