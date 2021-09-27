@@ -16,3 +16,6 @@ variable "handler" {
 variable "route_key" {
   description = "Specify route path for AWS API Gateway"
 }
+variable "memory_size" {
+  description = "Specify Lambda memory limit. Default is 128 Mb"
+}

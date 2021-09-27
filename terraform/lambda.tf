@@ -4,6 +4,7 @@ resource "aws_lambda_function" "this" {
   filename = var.filename
   handler  = var.handler
   runtime  = var.runtime
+  memory_size = var.memory_size
 
   role = aws_iam_role.lambda_role.arn
 }
